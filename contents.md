@@ -8,18 +8,18 @@
 방금, 당신의 10분은 어땠나요?
 
 ### Sub Text
-피부는 관리가 필요하고,  
-마음은 설명 없이 쉬어도 됩니다.  
+피부를 돌보는 시간,  
+마음에게도 쉼을 주세요.  
 
-우리는 그 두 가지를  
-같은 시간 안에서 다루고 싶었습니다.
+수린은 그 둘이 하나의 시간 속에서  
+자연스럽게 흐르도록 설계합니다.
 
 ---
 
 ## 2. Philosophy Section
 
 ### Section Title
-Ritual for Skin
+Routine becomes Rest
 
 ### Body Copy
 우리는 화장품을 더 많이 말하지 않습니다.  
