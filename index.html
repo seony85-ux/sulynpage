@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SULYN 프리뷰 | Ritual Skincare</title>
+  <meta name="description" content="리추얼 스킨케어 브랜드 SULYN - 방금, 당신의 10분은 어땠나요? 스킨케어는 관리가 아니라 잠시 멈추는 방법입니다.">
+  <!-- PRD 폰트 -->
+  <link rel="preconnect" href="https://hangeul.pstatic.net" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 1. Header (상단 고정) -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo font-display">SULYN</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">홈</a></li>
+          <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+          <li><a href="#origin" class="nav-link">Origin Story</a></li>
+          <li><a href="#preview" class="nav-link">Preview</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <!-- 모바일 메뉴: header 밖에 두어 backdrop-filter 영향을 받지 않도록 함 -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">홈</a></li>
+      <li><a href="#philosophy" class="mobile-nav-link">Philosophy</a></li>
+      <li><a href="#origin" class="mobile-nav-link">Origin Story</a></li>
+      <li><a href="#preview" class="mobile-nav-link">Preview</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- 2. Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-inner container">
+        <div class="hero-content">
+          <h1 class="hero-title font-display">방금, 당신의 10분은 어땠나요?</h1>
+          <div class="hero-desc font-body">
+            <p>피부는 관리가 필요하고,<br>마음은 설명 없이 쉬어도 됩니다.</p>
+            <p>우리는 그 두 가지를<br>같은 시간 안에서 다루고 싶었습니다.</p>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img src="images/image1.webp" alt="SULYN 리추얼 스킨케어 - 당신만의 10분" width="600" height="400">
+        </figure>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="hero-scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- 3. Philosophy -->
+    <section class="philosophy" id="philosophy">
+      <div class="container">
+        <span class="section-label font-body">Philosophy</span>
+        <h2 class="section-title font-display">Ritual for Skin</h2>
+        <div class="philosophy-body font-body">
+          <p>우리는 화장품을 더 많이 말하지 않습니다.<br>대신, 어떻게 쓰는지가 달라지면 하루의 감각도 달라진다고 믿습니다.</p>
+          <p>스킨케어는 관리가 아니라<br>잠시 멈추는 방법일 수 있습니다.</p>
+        </div>
+        <figure class="philosophy-image">
+          <img src="images/philosophy.jpg" alt="Ritual for Skin - 스킨케어 리추얼" width="1120" height="480">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 4. Origin Story -->
+    <section class="origin" id="origin">
+      <div class="container origin-inner">
+        <div class="origin-content">
+          <span class="section-label font-body">Origin Story</span>
+          <h2 class="section-title font-display">완벽해야 했던 저에게, 10분의 틈이 필요했습니다.</h2>
+          <div class="origin-letter" id="originLetter">
+            <div class="origin-text font-body">
+              <p>늘 긴장한 채 하루를 시작했고, 화장대 앞에서도 잘 해내야 한다는 생각을 했습니다.</p>
+              <p>그러다 문득, 아무 생각 없이 크림을 바르던 그 순간이 하루 중 가장 조용한 시간이라는 걸 알게 되었습니다.</p>
+              <p>누군가 옆에서 “지금은 이 정도면 충분해요”라고 말해준다면 좋겠다고 느꼈습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Preview -->
+    <section class="preview" id="preview">
+      <div class="container">
+        <span class="section-label font-body">Preview</span>
+        <h2 class="section-title font-display">곧, 일상의 작은 변화가 시작됩니다.</h2>
+        <p class="preview-intro font-body">오늘의 컨디션에 맞춰<br>스킨케어의 리듬을 정리하는 순간</p>
+        <figure class="preview-visual">
+          <img src="images/preview.jpg" alt="SULYN Preview 이미지" width="1120" height="560">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo font-display">SULYN</span>
+        <p class="footer-tagline font-body">Skincare, at Your Pace.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#philosophy" class="font-body">Philosophy</a>
+        <a href="#origin" class="font-body">Origin Story</a>
+        <a href="#preview" class="font-body">Preview</a>
+      </div>
+      <p class="footer-copy font-body">&copy; SULYN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
