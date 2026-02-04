@@ -560,14 +560,38 @@ img {
   }
 }
 
+/* 모바일: 가로 스크롤, 넘겨서 보기 */
 .preview-list {
-  display: grid;
-  gap: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 8px;
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 55px;
+  padding-right: 24px;
+}
+
+.preview-list::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 640px) {
   .preview-list {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    overflow: visible;
+    scroll-snap-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -579,12 +603,24 @@ img {
 }
 
 .preview-card {
+  flex: 0 0 auto;
+  width: min(320px, 85vw);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   background: var(--white);
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--texture);
   box-shadow: 0 4px 24px var(--shadow-soft);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+@media (min-width: 640px) {
+  .preview-card {
+    width: auto;
+    scroll-snap-align: none;
+    scroll-snap-stop: auto;
+  }
 }
 
 .preview-card:hover {
