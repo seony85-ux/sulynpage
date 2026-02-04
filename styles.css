@@ -664,6 +664,13 @@ img {
 .footer-links {
   display: flex;
   gap: 24px;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .footer-links {
+    justify-content: flex-start;
+  }
 }
 
 .footer-links a {
