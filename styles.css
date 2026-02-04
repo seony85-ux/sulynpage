@@ -11,6 +11,7 @@
   --accent: #6E8578;
   --texture: #CDCAC3;
   --white: #FFFFFF;
+  --mist-white: #F5F5F0;
   --shadow-soft: rgba(26, 32, 44, 0.06);
   --shadow-medium: rgba(26, 32, 44, 0.1);
   --transition-base: 0.3s ease;
@@ -372,10 +373,62 @@ img {
 }
 
 /* ============================================
-   3. Philosophy
+   3. Philosophy (전체화면 배경 + Mist White 텍스트)
    ============================================ */
 .philosophy {
+  position: relative;
   padding: 80px 0 100px;
+  background-image: url("images/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 모바일에서만 전체 높이 유지, 웹에서는 콘텐츠 높이만 사용해 하단 여백 축소 */
+@media (max-width: 767px) {
+  .philosophy {
+    min-height: 100vh;
+  }
+}
+
+.philosophy-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* 라벨·타이틀 왼쪽 정렬 */
+.philosophy .section-label,
+.philosophy .section-title {
+  color: var(--mist-white);
+  text-align: left;
+}
+
+.philosophy .section-title {
+  margin-bottom: 2em; /* 타이틀과 본문 사이 여백 2줄 */
+}
+
+.philosophy-body {
+  font-size: 1.05rem;
+  color: var(--mist-white);
+  line-height: 1.8;
+  margin-bottom: 0;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.philosophy-body p {
+  margin-bottom: 16px;
+}
+
+/* 〓가 있는 단락 윗줄에 여백 1줄 */
+.philosophy-body p.has-mark {
+  margin-top: 1em;
+}
+
+.philosophy-body p:last-child {
+  margin-bottom: 0;
 }
 
 .section-label {
@@ -393,44 +446,6 @@ img {
   color: var(--text-primary);
   margin-bottom: 24px;
   letter-spacing: -0.02em;
-}
-
-.philosophy-body {
-  font-size: 1.05rem;
-  color: var(--text-body);
-  line-height: 1.8;
-  margin-bottom: 48px;
-  max-width: 640px;
-}
-
-.philosophy-body p {
-  margin-bottom: 16px;
-}
-
-.philosophy-body p:last-child {
-  margin-bottom: 0;
-}
-
-.philosophy-image {
-  margin: 0;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  min-height: 240px;
-  background: linear-gradient(145deg, var(--texture) 0%, rgba(205, 202, 195, 0.35) 100%);
-}
-
-.philosophy-image img {
-  width: 100%;
-  height: auto;
-  min-height: 240px;
-  object-fit: cover;
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .philosophy-image img {
-    min-height: 380px;
-  }
 }
 
 /* ============================================
