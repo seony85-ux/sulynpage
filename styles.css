@@ -624,10 +624,6 @@ img {
   }
 }
 
-.preview-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px var(--shadow-medium);
-}
 
 .preview-card-visual {
   margin: 0;
