@@ -463,6 +463,8 @@ img {
 
 .origin-content .section-title {
   margin-bottom: 28px;
+  font-size: clamp(1.4rem, 3.2vw, 1.8rem);
+  text-align: center;
 }
 
 /* 편지 스타일 배경 */
