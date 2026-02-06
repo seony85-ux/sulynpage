@@ -526,6 +526,10 @@ img {
   padding: 80px 0 100px;
 }
 
+.preview .section-title {
+  font-size: clamp(1.4rem, 3.2vw, 1.8rem);
+}
+
 .preview-intro {
   font-size: 1rem;
   color: var(--text-body);
